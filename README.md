@@ -1,1 +1,0 @@
-# skalutki.github.io
