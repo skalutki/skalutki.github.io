@@ -1,16 +1,24 @@
 @import "_normalize";
 @import "_variables";
-
-
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap');
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-size: 16px;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+    color: #FFFFFF;
+    background: #171F3F;
+}
+
+.main {
+    color: #171F3F;
+    background: #FFFFFF;
 }

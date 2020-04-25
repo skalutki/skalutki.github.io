@@ -1,5 +1,5 @@
 "use strict";
-
+/*
 // service worker registration - remove if you're not going to use it
 
 if ('serviceWorker' in navigator) {
@@ -15,8 +15,6 @@ if ('serviceWorker' in navigator) {
 }
 
 // place your code below
-
+*/
 
 console.log(`Hello world!`);
-
-
