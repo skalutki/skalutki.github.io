@@ -14,11 +14,212 @@ html {
 }
 
 body {
-    color: #FFFFFF;
-    background: #171F3F;
+    /*color: #FFFFFF;
+    background: #171F3F;*/
+    max-width: 375px;
+    width: 100%;
 }
 
 .main {
     color: #171F3F;
     background: #FFFFFF;
+    margin: 4rem 1rem 5rem 1rem;
+}
+
+header {
+    &__about-me {
+        font-size: 1.625rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 2.25rem;
+        margin-bottom: 0.5rem;
+    }
+    &__paragraph {
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.625rem;
+        margin-bottom: 2.5rem;
+        margin-top: 0;
+        color: #52606D;
+    }
+}
+
+.id {
+    color: #0593FB;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.625rem;
+    margin-bottom: 2.5rem;
+    text-decoration: none;
+    text-decoration-line: underline;
+}
+
+.mail {
+    &__adress {
+        color: #0593FB;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5rem;
+        margin-bottom: 2.5rem;
+        text-decoration: none;
+    }
+    &__underline {
+        background: #0593FB;
+        border-radius: 41px;
+        width: 185px;
+        height: 2px;
+        margin-top: 4px;
+    }
+}
+
+.skills {
+    margin-top: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    &__title {
+        margin-top: 0;
+        margin-bottom: 0.75rem;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 2rem;
+        text-align: center;
+    }
+    &__underline {
+        background: #CBD2D9;
+        opacity: 0.5;
+        width: 100%;
+        height: 2px;
+        margin: 0 1rem 4rem 1rem;
+    }
+}
+
+.skill {
+    &__underline {
+        border-radius: 8px;
+        height: 4px;
+        transform: matrix(1, 0, 0, -1, 0, 0);
+        width: 40px;
+        &-green {
+            background: #06C847;
+        }
+        &-purple {
+            background: #653CAD;
+        }
+        &-blue {
+            background: #2251CC;
+        }
+    }
+    &__title {
+        font-size: 1.375rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    &__list {
+        color: #52606D;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 2.25rem;
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 3rem;
+        &-item {
+            &::before {
+                content: url('../assets/img/Vector.svg');
+                display: inline-block;
+                //*margin-left: -0.75rem;
+                margin-right: 0.75rem;
+            }
+        }
+        &-item1 {
+            &::before {
+                content: url('../assets/img/Vector\ purple.svg');
+                display: inline-block;
+                //*margin-left: -0.75rem;
+                margin-right: 0.75rem;
+            }
+        }
+        &-item2 {
+            &::before {
+                content: url('../assets/img/Vector\ blue.svg');
+                display: inline-block;
+                //*margin-left: -0.75rem;
+                margin-right: 0.75rem;
+            }
+        }
+    }
+}
+
+.projects {
+    &__tittle {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+    &__paragraph {
+        color: #52606D;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 0.875rem;
+        line-height: 1.625rem;
+        text-align: center;
+    }
+    &__list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 0;
+        margin-bottom: 5rem;
+        &-item {}
+    }
+}
+
+.contact {
+    padding-top: 7.5rem;
+    color: #FFFFFF;
+    background: #171F3F;
+    padding-bottom: 7.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    &__underline {
+        border-radius: 8px;
+        height: 4px;
+        transform: matrix(1, 0, 0, -1, 0, 0);
+        width: 40px;
+        background: #0593FB;
+    }
+    &__tittle {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    &__paragraph {
+        margin-top: 0;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 0.875rem;
+        line-height: 1.625rem;
+    }
+    &__icone {
+        height: 32px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        &-githube {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+    }
 }

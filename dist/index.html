@@ -30,17 +30,23 @@
     <main class="main">
 
         <header class="header">
-            <h1 class="nie wiem co">Hey there! 👋 My name is Karol and I’m an aspiring Frontend developer and a keen F1 fan. </h1>
+            <h1 class="header__about-me">Hey there! 👋 My name is Karol and I’m an aspiring Frontend developer and a keen F1 fan. </h1>
             <p class="header__paragraph">
-                You might be interested in checking the list of <a href="#skills"> my skills</a>. Don’t forget to have a glimpse at <a href="#projects">my projects</a>. Currently I’m looking for a new challenges so if you have one - <a href="#contact">contact me </a>😊
+                You might be interested in checking the list of <a class="id" href="#skills"> my skills</a>. Don’t forget to have a glimpse at <a class="id" href="#projects">my projects</a>. Currently I’m looking for a new challenges so if you have one
+                - <a class="id" href="#contact">contact me </a>😊
             </p>
-            <span class="mail">karolskalinski@gmail.com</span>
+            <section class="mail">
+                <span class="mail__adress">karolskalinski@gmail.com</span>
+                <div class="mail__underline"></div>
+            </section>
         </header>
 
         <section class="skills" id="skills">
             <h2 class="skills__title">My skills</h2>
+            <div class="skills__underline"></div>
 
             <section class="skill">
+                <div class="skill__underline skill__underline-green"></div>
                 <h3 class="skill__title">Working knowledge</h3>
                 <ul class="skill__list">
                     <li class="skill__list-item">Semantic HTML5</li>
@@ -56,28 +62,30 @@
             </section>
 
             <section class="skill">
+                <div class="skill__underline skill__underline-purple"></div>
                 <h3 class="skill__title">Know sometnhing about</h3>
                 <ul class="skill__list">
-                    <li class="skill__list-item">JavaScript ES6 + features</li>
-                    <li class="skill__list-item">CSS animations</li>
-                    <li class="skill__list-item">Working with API</li>
-                    <li class="skill__list-item">NPM Scripts</li>
-                    <li class="skill__list-item">Progressive web apps</li>
-                    <li class="skill__list-item">Git</li>
-                    <li class="skill__list-item">Accessibility</li>
+                    <li class="skill__list-item1">JavaScript ES6 + features</li>
+                    <li class="skill__list-item1">CSS animations</li>
+                    <li class="skill__list-item1">Working with API</li>
+                    <li class="skill__list-item1">NPM Scripts</li>
+                    <li class="skill__list-item1">Progressive web apps</li>
+                    <li class="skill__list-item1">Git</li>
+                    <li class="skill__list-item1">Accessibility</li>
 
                 </ul>
             </section>
 
             <section class="skill">
+                <div class="skill__underline skill__underline-blue"></div>
                 <h3 class="skill__title">Want to learn</h3>
                 <ul class="skill__list">
-                    <li class="skill__list-item">React JS</li>
-                    <li class="skill__list-item">Node.JS</li>
-                    <li class="skill__list-item">Typescript</li>
-                    <li class="skill__list-item">Gatsby</li>
-                    <li class="skill__list-item">Websockets</li>
-                    <li class="skill__list-item">Webpack</li>
+                    <li class="skill__list-item2">React JS</li>
+                    <li class="skill__list-item2">Node.JS</li>
+                    <li class="skill__list-item2">Typescript</li>
+                    <li class="skill__list-item2">Gatsby</li>
+                    <li class="skill__list-item2">Websockets</li>
+                    <li class="skill__list-item2">Webpack</li>
 
                 </ul>
             </section>
@@ -86,23 +94,29 @@
         <section class="projects" id="projects">
             <h2 class="projects__tittle">Recent projects</h2>
             <p class="projects__paragraph">I started my frontend developer path in 2020. Since then, I’ve built some projects. Here’s the list of the things I’ve done so far.</p>
-            <ul class="projects__list">
-                <li class="projects__list-item"></li>
-                <li class="projects__list-item"></li>
-                <li class="projects__list-item"></li>
-                <li class="projects__list-item"></li>
+            <ul class="projects__list projects__list-js">
+                <li class="projects__list-item">pierwszy projekt</li>
+                <li class="projects__list-item">drugi projekt</li>
+                <li class="projects__list-item">trzeci projekt</li>
+                <li class="projects__list-item">czwarty projekt</li>
             </ul>
         </section>
 
     </main>
 
-    <footer class="footer" id="contact">
-        <h2 class="contact">Contact me</h2>
+    <footer class="contact" id="contact">
+        <div class="contact__underline"></div>
+        <h2 class="contact__tittle">Contact me</h2>
         <p class="contact__paragraph">I’m open for new opportunities. If you have one for me we should talk! </p>
-        <a class="contact__link" href="#">ikona F</a>
-        <a class="contact__link" href="#">ikona GitHub</a>
-        <a class="contact__link" href="#">ikona Instagram</a>
-        <span class="mail">karolskalinski@gmail.com</span>
+        <div class="contact__icone">
+            <a class="contact__icone-link contact__icone-facebook" href="#"><img src="../assets/img/facebook.svg"> </a>
+            <a class="contact__icone-link contact__icone-githube" href="#"><img src="../assets/img/Github.svg"></a>
+            <a class="contact__icone-link contact__icone-instagram" href="#"><img src="../assets/img/instagram.svg"></a>
+        </div>
+        <section class="mail">
+            <span class="mail__adress">karolskalinski@gmail.com</span>
+            <div class="mail__underline"></div>
+        </section>
     </footer>
 
 

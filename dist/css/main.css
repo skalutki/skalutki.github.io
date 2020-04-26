@@ -321,11 +321,193 @@ html {
           box-sizing: inherit; }
 
 body {
-  color: #FFFFFF;
-  background: #171F3F; }
+  /*color: #FFFFFF;
+    background: #171F3F;*/
+  max-width: 375px;
+  width: 100%; }
 
 .main {
   color: #171F3F;
-  background: #FFFFFF; }
+  background: #FFFFFF;
+  margin: 4rem 1rem 5rem 1rem; }
+
+header__about-me {
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2.25rem;
+  margin-bottom: 0.5rem; }
+
+header__paragraph {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.625rem;
+  margin-bottom: 2.5rem;
+  margin-top: 0;
+  color: #52606D; }
+
+.id {
+  color: #0593FB;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.625rem;
+  margin-bottom: 2.5rem;
+  text-decoration: none;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline; }
+
+.mail__adress {
+  color: #0593FB;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin-bottom: 2.5rem;
+  text-decoration: none; }
+
+.mail__underline {
+  background: #0593FB;
+  border-radius: 41px;
+  width: 185px;
+  height: 2px;
+  margin-top: 4px; }
+
+.skills {
+  margin-top: 7.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .skills__title {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2rem;
+    text-align: center; }
+  .skills__underline {
+    background: #CBD2D9;
+    opacity: 0.5;
+    width: 100%;
+    height: 2px;
+    margin: 0 1rem 4rem 1rem; }
+
+.skill__underline {
+  border-radius: 8px;
+  height: 4px;
+  -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+      -ms-transform: matrix(1, 0, 0, -1, 0, 0);
+          transform: matrix(1, 0, 0, -1, 0, 0);
+  width: 40px; }
+  .skill__underline-green {
+    background: #06C847; }
+  .skill__underline-purple {
+    background: #653CAD; }
+  .skill__underline-blue {
+    background: #2251CC; }
+
+.skill__title {
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
+
+.skill__list {
+  color: #52606D;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2.25rem;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 3rem; }
+  .skill__list-item::before {
+    content: url("../assets/img/Vector.svg");
+    display: inline-block;
+    margin-right: 0.75rem; }
+  .skill__list-item1::before {
+    content: url("../assets/img/Vector purple.svg");
+    display: inline-block;
+    margin-right: 0.75rem; }
+  .skill__list-item2::before {
+    content: url("../assets/img/Vector blue.svg");
+    display: inline-block;
+    margin-right: 0.75rem; }
+
+.projects__tittle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center; }
+
+.projects__paragraph {
+  color: #52606D;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.625rem;
+  text-align: center; }
+
+.projects__list {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  padding-left: 0;
+  margin-bottom: 5rem; }
+
+.contact {
+  padding-top: 7.5rem;
+  color: #FFFFFF;
+  background: #171F3F;
+  padding-bottom: 7.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  .contact__underline {
+    border-radius: 8px;
+    height: 4px;
+    -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+        -ms-transform: matrix(1, 0, 0, -1, 0, 0);
+            transform: matrix(1, 0, 0, -1, 0, 0);
+    width: 40px;
+    background: #0593FB; }
+  .contact__tittle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 0.5rem; }
+  .contact__paragraph {
+    margin-top: 0;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.625rem; }
+  .contact__icone {
+    height: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem; }
+    .contact__icone-githube {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem; }
 
 /*# sourceMappingURL=main.css.map */
