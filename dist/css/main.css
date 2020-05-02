@@ -441,29 +441,75 @@ header__paragraph {
     display: inline-block;
     margin-right: 0.75rem; }
 
-.projects__tittle {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  text-align: center; }
+.projects {
+  background: #F5F7FA; }
+  .projects__tittle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    margin-bottom: 2rem; }
+  .projects__paragraph {
+    color: #52606D;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+    text-align: center; }
+  .projects__list {
+    list-style: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 0;
+    margin-bottom: 5rem; }
 
-.projects__paragraph {
-  color: #52606D;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 0.875rem;
-  line-height: 1.625rem;
-  text-align: center; }
-
-.projects__list {
-  list-style: none;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
-  padding-left: 0;
-  margin-bottom: 5rem; }
+.project {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+          box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+  border-radius: 4px;
+  padding-bottom: 1rem;
+  padding-left: 2rem; }
+  .project__icon1 {
+    content: url("../assets/img/GithubBlack.svg");
+    padding-top: 2rem; }
+  .project__title {
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding-top: 1rem; }
+  .project__paragraph {
+    color: #52606D;
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.625rem; }
+  .project__link {
+    background: #F5F7FA;
+    margin-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0.625rem 1rem 0.625rem 8.438rem; }
+    .project__link-item {
+      text-decoration: none;
+      color: #0593FB;
+      font-weight: 500;
+      font-size: 0.875rem;
+      line-height: 1.75rem; }
+    .project__link-icon2 {
+      content: url("../assets/img/Demo.svg"); }
+    .project__link-icon3 {
+      content: url("../assets/img/Code.png"); }
 
 .contact {
   padding-top: 7.5rem;
