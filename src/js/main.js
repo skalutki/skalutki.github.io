@@ -31,11 +31,11 @@ fetch("https://api.github.com/users/skalutki/repos?sort=updated&direction=dest")
                 <span class="project__icon1"></span> 
                 <h3 class="project__title">${name}</h3> 
                 <p class="project__paragraph">${description ? description : "brak opisu repozytorium"}</p>
-                <section class="project__link">
-                  <div class="project__link-position">
-                    <a class="project__link-item" href = "${html_url}"> <span class="project__link-icon2"></span>Demo</a> 
-                    <div class="project__link-separation"></div>
-                    <a class="project__link-item" href = "${homepage}"> <span class="project__link-icon3"></span>Live</a>
+                <section class="link">
+                  <div class="link__box">
+                    <a class="link__box-item" href = "${html_url}"> <span class="link__box-icon2"></span>Demo</a> 
+                    <div class="link__box-separation"></div>
+                    <a class="link__box-item" href = "${homepage}"> <span class="link__box-icon3"></span>Live</a>
                   </div>
                 </section>                
               </section>

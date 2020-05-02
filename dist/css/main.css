@@ -395,7 +395,7 @@ header__paragraph {
     opacity: 0.5;
     width: 100%;
     height: 2px;
-    margin: 0 1rem 4rem 1rem; }
+    margin-bottom: 4rem; }
 
 .skill__underline {
   border-radius: 8px;
@@ -442,7 +442,9 @@ header__paragraph {
     margin-right: 0.75rem; }
 
 .projects {
-  background: #F5F7FA; }
+  background: #F5F7FA;
+  margin-left: -1rem;
+  margin-right: -1rem; }
   .projects__tittle {
     font-style: normal;
     font-weight: 600;
@@ -468,10 +470,12 @@ header__paragraph {
 
 .project {
   background: #FFFFFF;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   -webkit-box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
           box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
   border-radius: 4px;
-  padding-bottom: 1rem;
   padding-left: 2rem; }
   .project__icon1 {
     content: url("../assets/img/GithubBlack.svg");
@@ -486,9 +490,14 @@ header__paragraph {
     font-weight: 300;
     font-size: 0.875rem;
     line-height: 1.625rem; }
-  .project__link {
-    background: #F5F7FA;
-    margin-top: 2rem;
+
+.link {
+  display: box;
+  background: #F5F7FA;
+  margin-top: 2rem;
+  padding: 0.625rem 2rem 0.625rem 8.438rem;
+  margin-left: -2rem; }
+  .link__box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -498,18 +507,28 @@ header__paragraph {
             flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
-    padding: 0.625rem 1rem 0.625rem 8.438rem; }
-    .project__link-item {
+            align-items: center; }
+    .link__box-item {
       text-decoration: none;
       color: #0593FB;
       font-weight: 500;
       font-size: 0.875rem;
       line-height: 1.75rem; }
-    .project__link-icon2 {
-      content: url("../assets/img/Demo.svg"); }
-    .project__link-icon3 {
-      content: url("../assets/img/Code.png"); }
+    .link__box-icon2 {
+      content: url("../assets/img/Demo.svg");
+      margin-right: 0.375rem; }
+    .link__box-icon3 {
+      content: url("../assets/img/code.svg");
+      margin-right: 0.375rem; }
+    .link__box-separation {
+      background: #CBD2D9;
+      -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+          -ms-transform: matrix(-1, 0, 0, 1, 0, 0);
+              transform: matrix(-1, 0, 0, 1, 0, 0);
+      width: 1px;
+      height: 28px;
+      margin-left: 1rem;
+      margin-right: 1rem; }
 
 .contact {
   padding-top: 7.5rem;
