@@ -321,8 +321,6 @@ html {
           box-sizing: inherit; }
 
 body {
-  /*color: #FFFFFF;
-    background: #171F3F;*/
   max-width: 375px;
   width: 100%; }
 
@@ -331,17 +329,24 @@ body {
   background: #FFFFFF;
   margin: 4rem 1rem 5rem 1rem; }
 
-header__about-me {
+.header__photo {
+  border: solid 4px #CBD2D9;
+  border-radius: 50%;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  padding: 2px 2px; }
+
+.header__about-me {
   font-size: 1.625rem;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 600;
   line-height: 2.25rem;
   margin-bottom: 0.5rem; }
 
-header__paragraph {
+.header__paragraph {
   font-size: 0.875rem;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 300;
   line-height: 1.625rem;
   margin-bottom: 2.5rem;
   margin-top: 0;
@@ -475,7 +480,7 @@ header__paragraph {
   margin-right: 1rem;
   -webkit-box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
           box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
-  border-radius: 4px;
+  border-radius: 0.025rem;
   padding-left: 2rem; }
   .project__icon1 {
     content: url("../assets/img/GithubBlack.svg");
@@ -484,12 +489,15 @@ header__paragraph {
     font-style: normal;
     font-weight: 600;
     line-height: 1.5rem;
-    padding-top: 1rem; }
+    padding-top: 1rem;
+    margin-top: 0;
+    margin-bottom: 0; }
   .project__paragraph {
     color: #52606D;
     font-weight: 300;
     font-size: 0.875rem;
-    line-height: 1.625rem; }
+    line-height: 1.625rem;
+    margin-top: 0.025rem; }
 
 .link {
   display: box;
@@ -513,7 +521,17 @@ header__paragraph {
       color: #0593FB;
       font-weight: 500;
       font-size: 0.875rem;
-      line-height: 1.75rem; }
+      line-height: 1.75rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
     .link__box-icon2 {
       content: url("../assets/img/Demo.svg");
       margin-right: 0.375rem; }

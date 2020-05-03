@@ -14,8 +14,6 @@ html {
 }
 
 body {
-    /*color: #FFFFFF;
-    background: #171F3F;*/
     max-width: 375px;
     width: 100%;
 }
@@ -26,18 +24,26 @@ body {
     margin: 4rem 1rem 5rem 1rem;
 }
 
-header {
+.header {
+    &__photo {
+        //* background-image: url("../assets/img/karols2.jpg");
+        border: solid 4px #CBD2D9;
+        border-radius: 50%;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+        padding: 2px 2px;
+    }
     &__about-me {
         font-size: 1.625rem;
         font-style: normal;
-        font-weight: 300;
+        font-weight: 600;
         line-height: 2.25rem;
         margin-bottom: 0.5rem;
     }
     &__paragraph {
         font-size: 0.875rem;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 300;
         line-height: 1.625rem;
         margin-bottom: 2.5rem;
         margin-top: 0;
@@ -182,7 +188,6 @@ header {
         grid-template-columns: 1fr;
         padding-left: 0;
         margin-bottom: 5rem;
-        &-item {}
     }
 }
 
@@ -192,7 +197,7 @@ header {
     margin-left: 1rem;
     margin-right: 1rem;
     box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
-    border-radius: 4px;
+    border-radius: 0.025rem;
     padding-left: 2rem;
     &__icon1 {
         content: url("../assets/img/GithubBlack.svg");
@@ -203,12 +208,15 @@ header {
         font-weight: 600;
         line-height: 1.5rem;
         padding-top: 1rem;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     &__paragraph {
         color: #52606D;
         font-weight: 300;
         font-size: 0.875rem;
         line-height: 1.625rem;
+        margin-top: 0.025rem;
     }
 }
 
@@ -228,6 +236,9 @@ header {
             font-weight: 500;
             font-size: 0.875rem;
             line-height: 1.75rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
         }
         &-icon2 {
             content: url("../assets/img/Demo.svg");
