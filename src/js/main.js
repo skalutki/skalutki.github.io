@@ -1,21 +1,5 @@
 "use strict";
-/*
-// service worker registration - remove if you're not going to use it
 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
-}
-
-// place your code below
-*/
 const list = document.querySelector('.projects__list-js');
 
 fetch("https://api.github.com/users/skalutki/repos?sort=updated&direction=dest")
@@ -24,7 +8,7 @@ fetch("https://api.github.com/users/skalutki/repos?sort=updated&direction=dest")
         const repos = resp;
         for (const repo of repos) {
             const { html_url, name, description, homepage } = repo
-            console.log(repo)
+
             list.innerHTML += `
             <li class="projects__list-item"> 
               <section class="project">

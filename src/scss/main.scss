@@ -14,19 +14,20 @@ html {
 }
 
 body {
-    max-width: 375px;
-    width: 100%;
+    background: $white;
 }
 
 .main {
-    color: #171F3F;
-    background: #FFFFFF;
-    margin: 4rem 1rem 5rem 1rem;
+    max-width: 375px;
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
 }
 
 .header {
+    margin-left: 1rem;
+    margin-right: 1rem;
     &__photo {
-        //* background-image: url("../assets/img/karols2.jpg");
         border: solid 4px #CBD2D9;
         border-radius: 50%;
         margin-top: 4rem;
@@ -52,7 +53,7 @@ body {
 }
 
 .id {
-    color: #0593FB;
+    color: $blue;
     font-size: 0.875rem;
     font-weight: 500;
     line-height: 1.625rem;
@@ -63,7 +64,7 @@ body {
 
 .mail {
     &__adress {
-        color: #0593FB;
+        color: $blue;
         font-size: 0.875rem;
         font-style: normal;
         font-weight: 500;
@@ -72,7 +73,7 @@ body {
         text-decoration: none;
     }
     &__underline {
-        background: #0593FB;
+        background: $blue;
         border-radius: 41px;
         width: 185px;
         height: 2px;
@@ -81,6 +82,8 @@ body {
 }
 
 .skills {
+    margin-left: 1rem;
+    margin-right: 1rem;
     margin-top: 7.5rem;
     display: flex;
     flex-direction: column;
@@ -139,7 +142,6 @@ body {
             &::before {
                 content: url('../assets/img/Vector.svg');
                 display: inline-block;
-                //*margin-left: -0.75rem;
                 margin-right: 0.75rem;
             }
         }
@@ -147,7 +149,6 @@ body {
             &::before {
                 content: url('../assets/img/Vector\ purple.svg');
                 display: inline-block;
-                //*margin-left: -0.75rem;
                 margin-right: 0.75rem;
             }
         }
@@ -155,7 +156,6 @@ body {
             &::before {
                 content: url('../assets/img/Vector\ blue.svg');
                 display: inline-block;
-                //*margin-left: -0.75rem;
                 margin-right: 0.75rem;
             }
         }
@@ -164,8 +164,7 @@ body {
 
 .projects {
     background: #F5F7FA;
-    margin-left: -1rem;
-    margin-right: -1rem;
+    max-width: 375px;
     &__tittle {
         font-style: normal;
         font-weight: 600;
@@ -192,7 +191,7 @@ body {
 }
 
 .project {
-    background: #FFFFFF;
+    background: $white;
     margin-top: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -221,10 +220,14 @@ body {
 }
 
 .link {
-    display: box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     background: #F5F7FA;
     margin-top: 2rem;
-    padding: 0.625rem 2rem 0.625rem 8.438rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    padding-right: 2rem;
     margin-left: -2rem;
     &__box {
         display: flex;
@@ -232,7 +235,7 @@ body {
         align-items: center;
         &-item {
             text-decoration: none;
-            color: #0593FB;
+            color: $blue;
             font-weight: 500;
             font-size: 0.875rem;
             line-height: 1.75rem;
@@ -261,7 +264,7 @@ body {
 
 .contact {
     padding-top: 7.5rem;
-    color: #FFFFFF;
+    color: $white;
     background: #171F3F;
     padding-bottom: 7.5rem;
     padding-left: 1rem;
@@ -271,7 +274,7 @@ body {
         height: 4px;
         transform: matrix(1, 0, 0, -1, 0, 0);
         width: 40px;
-        background: #0593FB;
+        background: $blue;
     }
     &__tittle {
         font-style: normal;

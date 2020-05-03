@@ -321,36 +321,37 @@ html {
           box-sizing: inherit; }
 
 body {
-  max-width: 375px;
-  width: 100%; }
+  background: #FFFFFF; }
 
 .main {
-  color: #171F3F;
-  background: #FFFFFF;
-  margin: 4rem 1rem 5rem 1rem; }
-
-.header__photo {
-  border: solid 4px #CBD2D9;
-  border-radius: 50%;
+  max-width: 375px;
+  width: 100%;
   margin-top: 4rem;
-  margin-bottom: 1rem;
-  padding: 2px 2px; }
+  margin-bottom: 5rem; }
 
-.header__about-me {
-  font-size: 1.625rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 2.25rem;
-  margin-bottom: 0.5rem; }
-
-.header__paragraph {
-  font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 1.625rem;
-  margin-bottom: 2.5rem;
-  margin-top: 0;
-  color: #52606D; }
+.header {
+  margin-left: 1rem;
+  margin-right: 1rem; }
+  .header__photo {
+    border: solid 4px #CBD2D9;
+    border-radius: 50%;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    padding: 2px 2px; }
+  .header__about-me {
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.25rem;
+    margin-bottom: 0.5rem; }
+  .header__paragraph {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.625rem;
+    margin-bottom: 2.5rem;
+    margin-top: 0;
+    color: #52606D; }
 
 .id {
   color: #0593FB;
@@ -379,6 +380,8 @@ body {
   margin-top: 4px; }
 
 .skills {
+  margin-left: 1rem;
+  margin-right: 1rem;
   margin-top: 7.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -448,8 +451,7 @@ body {
 
 .projects {
   background: #F5F7FA;
-  margin-left: -1rem;
-  margin-right: -1rem; }
+  max-width: 375px; }
   .projects__tittle {
     font-style: normal;
     font-weight: 600;
@@ -500,10 +502,21 @@ body {
     margin-top: 0.025rem; }
 
 .link {
-  display: box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   background: #F5F7FA;
   margin-top: 2rem;
-  padding: 0.625rem 2rem 0.625rem 8.438rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  padding-right: 2rem;
   margin-left: -2rem; }
   .link__box {
     display: -webkit-box;
