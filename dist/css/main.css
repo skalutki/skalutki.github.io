@@ -310,7 +310,7 @@ template {
 
 .header {
   max-width: 1184px;
-  padding: 112px 0 200px;
+  padding: 112px 0 184px;
   margin: 0 auto; }
   .header__description {
     color: #52606D;
@@ -326,7 +326,6 @@ template {
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 2rem;
-    margin-bottom: 12.5rem;
     text-decoration: none;
     padding-bottom: 8px;
     border-bottom: solid 2px #0593FB; }
@@ -350,6 +349,92 @@ template {
   font-weight: 500;
   line-height: 2rem;
   margin-bottom: 2.5rem; }
+
+.skills {
+  max-width: 1184px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .skills__title {
+    margin: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 3rem;
+    text-align: left;
+    padding: 1rem 0;
+    border-bottom: 2px solid #E5E8EC; }
+
+.skill {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 8rem 0 0; }
+  .skill__item {
+    color: #52606D;
+    padding: 11px 0 11px 30px;
+    position: relative; }
+    .skill__item::before {
+      position: absolute;
+      top: 12px;
+      left: 0;
+      content: '';
+      display: block;
+      width: 18px;
+      height: 18px;
+      background: url("../assets/img/check-green.svg");
+      background-repeat: no-repeat; }
+      .skill--violet .skill__item::before {
+        background: url("../assets/img/check-violet.svg"); }
+      .skill--blue .skill__item::before {
+        background: url("../assets/img/check-blue.svg"); }
+  .skill__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+    padding: 0;
+    margin-top: calc(1.5rem + 4px);
+    -webkit-column-gap: 1.5rem;
+       -moz-column-gap: 1.5rem;
+            column-gap: 1.5rem; }
+    .skill__list-item1::before {
+      content: url("../assets/img/Vector purple.svg");
+      display: inline-block;
+      margin-right: 0.75rem;
+      width: 16px;
+      height: 16px; }
+    .skill__list-item2::before {
+      content: url("../assets/img/Vector blue.svg");
+      display: inline-block;
+      margin-right: 0.75rem;
+      width: 16px;
+      height: 16px; }
+  .skill__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.75rem;
+    margin: 0; }
+    .skill__title::before {
+      content: '';
+      width: 80px;
+      height: 4px;
+      display: block;
+      background: #06C847;
+      border-radius: 8px;
+      margin-bottom: 1.5rem; }
+      .skill--violet .skill__title::before {
+        background: #653CAD; }
+      .skill--blue .skill__title::before {
+        background: #2251CC; }
 
 html {
   -webkit-box-sizing: border-box;
