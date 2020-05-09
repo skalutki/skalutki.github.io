@@ -1,6 +1,6 @@
 .skills {
     max-width: 1184px;
-    margin: 0 auto;
+    margin: 0 auto 8rem;
     display: flex;
     flex-direction: column;
     &__title {
@@ -9,7 +9,6 @@
         font-weight: 600;
         font-size: 2.25rem;
         line-height: 3rem;
-        text-align: left;
         padding: 1rem 0;
         border-bottom: 2px solid #E5E8EC;
     }

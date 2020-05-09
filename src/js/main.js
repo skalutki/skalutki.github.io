@@ -1,5 +1,5 @@
 "use strict";
-
+/*
 const list = document.querySelector('.projects__list-js');
 
 fetch("https://api.github.com/users/skalutki/repos?sort=updated&direction=dest")
@@ -29,4 +29,4 @@ fetch("https://api.github.com/users/skalutki/repos?sort=updated&direction=dest")
     })
     .catch(err => {
         console.log(err);
-    })
+    })*/
