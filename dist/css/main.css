@@ -367,6 +367,8 @@ body {
   border: 16px solid #171F3F;
   color: #171F3F;
   font-family: 'Poppins', sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 /*# sourceMappingURL=main.css.map */
