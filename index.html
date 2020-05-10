@@ -5,29 +5,124 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
+    <title>CV Karol Skalinski</title>
     <meta name="description" content="Description" />
 
     <!-- Title -->
-    <meta property="og:title" content="" />
+    <meta property="og:title" content="Hi my name is Karol Skalinski and this webpage show my CV" />
     <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+    <meta property="og:description" content="https://skalutki.github.io/my-repo/" />
+    <!-- full url with http(s) ie. https://skalutki.github.io/my-repo/ -->
     <meta property="og:url" content="" />
     <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
     <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
-
-    <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
+    <link rel="icon" type="image/png" href="assets/pwa/Icons/business.png" />
+    <!-- <div>Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
 
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
-    <h1>Skalutki</h1>
+    <main class="main">
+
+        <header class="header">
+            <img class="header__photo" src="assets/img/karol1.JPG" alt="picture show guy who is the owner of this CV.">
+            <h1 class="header__title">Hey there! 👋 My name is Karol and I’m an aspiring Frontend developer and a keen F1 fan. </h1>
+            <p class="header__description">
+                You might be interested in checking the list of <a class="id" href="#skills"> my skills</a>. Don’t forget to have a glimpse at <a class="id" href="#projects">my projects</a>. Currently I’m looking for a new challenges so if you have one
+                - <a class="id" href="#contact">contact me </a>😊
+            </p>
+            <a class="header__mail" href="mailto:karolskalinski@gmail.com">karolskalinski@gmail.com</a>
+
+        </header>
+
+        <section class="skills" id="skills">
+            <h2 class="skills__title">My skills</h2>
+
+            <section class="skill">
+                <h3 class="skill__title">Working knowledge</h3>
+                <ul class="skill__list">
+                    <li class="skill__item">Semantic HTML5</li>
+                    <li class="skill__item">Flexbox</li>
+                    <li class="skill__item">Markdown</li>
+                    <li class="skill__item">JS: Local storage</li>
+                    <li class="skill__item">Figma</li>
+                    <li class="skill__item">CSS grid</li>
+                    <li class="skill__item">Forms</li>
+                    <li class="skill__item">JS: DOM manipulations</li>
+                    <li class="skill__item">SASS</li>
+                </ul>
+
+            </section>
+
+            <section class="skill skill--violet">
+                <h3 class="skill__title">Know sometnhing about</h3>
+                <ul class="skill__list">
+                    <li class="skill__item">JavaScript ES6 + features</li>
+                    <li class="skill__item">CSS animations</li>
+                    <li class="skill__item">Working with API</li>
+                    <li class="skill__item">NPM Scripts</li>
+                    <li class="skill__item">Progressive web apps</li>
+                    <li class="skill__item">Git</li>
+                    <li class="skill__item">Accessibility</li>
+
+                </ul>
+
+            </section>
+
+            <section class="skill skill--blue">
+                <h3 class="skill__title">Want to learn</h3>
+                <ul class="skill__list">
+                    <li class="skill__item">React JS</li>
+                    <li class="skill__item">Node.JS</li>
+                    <li class="skill__item">GrafQL</li>
+                    <li class="skill__item">Web Components</li>
+                    <li class="skill__item">Typescript</li>
+                    <li class="skill__item">Gatsby</li>
+                    <li class="skill__item">Websockets</li>
+                    <li class="skill__item">Webpack</li>
+
+                </ul>
+            </section>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2 class="projects__title">Recent projects</h2>
+            <div class="container">
+                <p class="projects__description">I started my frontend developer path in 2020. Since then, I’ve built some projects. Here’s the list of the things I’ve done so far.</p>
+                <ul class="projects__list projects__list-js">
+
+                </ul>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="contact" id="contact">
+        <h2 class="contact__title">Contact me</h2>
+        <div class="container">
+            <p class="contact__description">I’m open for new opportunities. If you have one for me we should talk! </p>
+            <ul class="social">
+
+                <li class="social__item">
+                    <a class="social__link social__link-facebook" href="https://facebook.com/karol.skalutki?ref=bookmarks" target="_blank" rel="nofollor noreferrer">
+                        <img class="social__icon" src="assets/img/facebook.svg" alt="facebook"> </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link-githube" href="https://github.com/skalutki" target="_blank" rel="nofollor noreferrer">
+                        <img class="social__icon" src="assets/img/Github.svg" alt="GitHub"> </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link-linkendin" href="https://linkedin.com/in/karol-skalinski-057591b1/" target="_blank" rel="nofollor noreferrer">
+                        <img class="social__icon" src="assets/img/linkedin-logo-png.png" alt="facebook" alt="linkendin" width="25px" height="25px"> </a>
+                </li>
+            </ul>
+            <a class="contact__mail" href="mailto:karolskalinski@gmail.com">karolskalinski@gmail.com</a>
+        </div>
+    </footer>
+
 
     <script src="js/main.js"></script>
 </body>
