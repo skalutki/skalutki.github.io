@@ -1,7 +1,10 @@
     .header {
         max-width: 1216px;
-        padding: 112px 16px 184px;
+        padding: calc(8rem - 16px) 1rem 11.5rem;
         margin: 0 auto;
+        @media (max-width: $mobile) {
+            padding: 64px 16px 120px;
+        }
         &__description {
             color: $gray;
             font-style: normal;
@@ -27,6 +30,10 @@
             border: 4px solid #CBD2D9;
             border-radius: 50%;
             padding: 4px;
+            @media (max-width: $mobile) {
+                width: 80px;
+                height: 80px;
+            }
         }
         &__title {
             font-style: normal;
@@ -35,6 +42,9 @@
             line-height: 3.5rem;
             margin: 2rem 0 1rem;
             max-width: 780px;
+            @media (max-width: $mobile) {
+                margin: 16px 0 8px;
+            }
         }
     }
     

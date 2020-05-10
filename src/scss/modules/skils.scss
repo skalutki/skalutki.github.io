@@ -12,17 +12,28 @@
         line-height: 3rem;
         padding: 1rem 0;
         border-bottom: 2px solid #E5E8EC;
+        @media (max-width: $mobile) {
+            text-align: center;
+        }
     }
 }
 
 .skill {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 0.5rem;
     padding: 8rem 0 0;
+    @media (max-width: $mobile) {
+        grid-template-columns: 1fr;
+        padding: 5rem 0 0;
+    }
     &__item {
         color: $gray;
         padding: 11px 0 11px 30px;
         position: relative;
+        @media (max-width: $mobile) {
+            padding-left: 20px;
+        }
         &::before {
             position: absolute;
             top: 12px;
@@ -34,38 +45,26 @@
             background: url('../assets/img/check-green.svg');
             background-repeat: no-repeat;
             .skill--violet & {
-                background: url('../assets/img/check-violet.svg');
+                background-image: url('../assets/img/check-violet.svg');
             }
             .skill--blue & {
-                background: url('../assets/img/check-blue.svg');
+                background-image: url('../assets/img/check-blue.svg');
+            }
+            @media (max-width: $mobile) {
+                width: 12px;
+                height: 12px;
+                background-size: contain;
+                top: 14px;
             }
         }
     }
     &__list {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
         list-style-type: none;
         padding: 0;
         margin-top: calc(1.5rem + 4px);
         column-gap: 1.5rem;
-        &-item1 {
-            &::before {
-                content: url('../assets/img/Vector\ purple.svg');
-                display: inline-block;
-                margin-right: 0.75rem;
-                width: 16px;
-                height: 16px;
-            }
-        }
-        &-item2 {
-            &::before {
-                content: url('../assets/img/Vector\ blue.svg');
-                display: inline-block;
-                margin-right: 0.75rem;
-                width: 16px;
-                height: 16px;
-            }
-        }
     }
     &__title {
         font-style: normal;
@@ -86,6 +85,9 @@
             }
             .skill--blue & {
                 background: $dark-blue;
+            }
+            @media (max-width: $mobile) {
+                width: 40px;
             }
         }
     }

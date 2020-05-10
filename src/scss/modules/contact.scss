@@ -37,6 +37,9 @@
             background: $blue;
             border-radius: 8px;
             margin-bottom: 1.5rem;
+            @media (max-width: $mobile) {
+                width: 40px;
+            }
         }
     }
 }
