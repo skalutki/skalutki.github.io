@@ -8,6 +8,9 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    @media (max-width: $mobile) {
+        font-size: 12px;
+    }
 }
 
 *,
@@ -24,9 +27,13 @@ body {
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
 }
 
 .container {
-    max-width: 1184px;
+    max-width: 1216px;
+    padding: 0 16px;
     margin: 0 auto;
 }
