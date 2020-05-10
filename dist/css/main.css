@@ -308,6 +308,59 @@ template {
 [hidden] {
   display: none; }
 
+.contact {
+  color: #FFFFFF;
+  background: #171F3F;
+  padding-bottom: calc(8rem - 16px); }
+  .contact__description {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin: 0 0 1.5rem;
+    max-width: 580px; }
+  .contact__mail {
+    color: #0593FB;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    text-decoration: none;
+    padding-bottom: 8px;
+    border-bottom: solid 2px #0593FB;
+    display: inline-block;
+    margin: 3rem 0 0 0; }
+  .contact__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 0 auto 1rem;
+    max-width: 1184px;
+    padding: 8rem 0 0; }
+    .contact__title::before {
+      content: '';
+      width: 80px;
+      height: 4px;
+      display: block;
+      background: #0593FB;
+      border-radius: 8px;
+      margin-bottom: 1.5rem; }
+
+.social {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .social__item + .social__item {
+    margin-left: 1.5rem; }
+  .social__link {
+    text-decoration: none; }
+
 .header {
   max-width: 1184px;
   padding: 112px 0 184px;
@@ -356,14 +409,14 @@ template {
   padding: 8rem 0; }
   .projects__description {
     color: #52606D;
-    margin: 0;
+    margin: 0 0 4rem;
     font-style: normal;
     font-weight: 300;
     font-size: 1.25rem;
     line-height: 2.25rem;
     max-width: 580px; }
   .projects__title {
-    margin: 0 auto;
+    margin: 0 auto 1rem;
     font-style: normal;
     font-weight: 600;
     font-size: 2.25rem;

@@ -1,6 +1,7 @@
 @import "_normalize";
 @import "_variables";
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap&subset=latin-ext');
+@import "modules/contact.scss";
 @import "modules/header.scss";
 @import "modules/projects.scss";
 @import "modules/skils.scss";
@@ -24,8 +25,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
-.main {}
 
 .container {
     max-width: 1184px;
