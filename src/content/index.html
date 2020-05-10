@@ -27,91 +27,100 @@
     <main class="main">
 
         <header class="header">
-            <img class="header__photo" src="../assets/img/karols2.jpg" alt="picture show guy who is the owner of this CV." height="66.86px" width="66.86px">
-            <h1 class="header__about-me">Hey there! 👋 My name is Karol and I’m an aspiring Frontend developer and a keen F1 fan. </h1>
-            <p class="header__paragraph">
+            <img class="header__photo" src="assets/img/karol1.JPG" alt="picture show guy who is the owner of this CV.">
+            <h1 class="header__title">Hey there! 👋 My name is Karol and I’m an aspiring Frontend developer and a keen F1 fan. </h1>
+            <p class="header__description">
                 You might be interested in checking the list of <a class="id" href="#skills"> my skills</a>. Don’t forget to have a glimpse at <a class="id" href="#projects">my projects</a>. Currently I’m looking for a new challenges so if you have one
                 - <a class="id" href="#contact">contact me </a>😊
             </p>
-            <section class="mail">
-                <span class="mail__adress">karolskalinski@gmail.com</span>
-                <div class="mail__underline"></div>
-            </section>
+            <a class="header__mail" href="mailto:karolskalinski@gmail.com">karolskalinski@gmail.com</a>
+
         </header>
 
         <section class="skills" id="skills">
             <h2 class="skills__title">My skills</h2>
-            <div class="skills__underline"></div>
 
             <section class="skill">
-                <div class="skill__underline skill__underline-green"></div>
                 <h3 class="skill__title">Working knowledge</h3>
                 <ul class="skill__list">
-                    <li class="skill__list-item">Semantic HTML5</li>
-                    <li class="skill__list-item">Flexbox</li>
-                    <li class="skill__list-item">Markdown</li>
-                    <li class="skill__list-item">JS: Local storage</li>
-                    <li class="skill__list-item">Figma</li>
-                    <li class="skill__list-item">CSS grid</li>
-                    <li class="skill__list-item">Forms</li>
-                    <li class="skill__list-item">JS: DOM manipulations</li>
-                    <li class="skill__list-item">SASS</li>
+                    <li class="skill__item">Semantic HTML5</li>
+                    <li class="skill__item">Flexbox</li>
+                    <li class="skill__item">Markdown</li>
+                    <li class="skill__item">JS: Local storage</li>
+                    <li class="skill__item">Figma</li>
+                    <li class="skill__item">CSS grid</li>
+                    <li class="skill__item">Forms</li>
+                    <li class="skill__item">JS: DOM manipulations</li>
+                    <li class="skill__item">SASS</li>
                 </ul>
+
             </section>
 
-            <section class="skill">
-                <div class="skill__underline skill__underline-purple"></div>
+            <section class="skill skill--violet">
                 <h3 class="skill__title">Know sometnhing about</h3>
                 <ul class="skill__list">
-                    <li class="skill__list-item1">JavaScript ES6 + features</li>
-                    <li class="skill__list-item1">CSS animations</li>
-                    <li class="skill__list-item1">Working with API</li>
-                    <li class="skill__list-item1">NPM Scripts</li>
-                    <li class="skill__list-item1">Progressive web apps</li>
-                    <li class="skill__list-item1">Git</li>
-                    <li class="skill__list-item1">Accessibility</li>
+                    <li class="skill__item">JavaScript ES6 + features</li>
+                    <li class="skill__item">CSS animations</li>
+                    <li class="skill__item">Working with API</li>
+                    <li class="skill__item">NPM Scripts</li>
+                    <li class="skill__item">Progressive web apps</li>
+                    <li class="skill__item">Git</li>
+                    <li class="skill__item">Accessibility</li>
 
                 </ul>
+
             </section>
 
-            <section class="skill">
-                <div class="skill__underline skill__underline-blue"></div>
+            <section class="skill skill--blue">
                 <h3 class="skill__title">Want to learn</h3>
                 <ul class="skill__list">
-                    <li class="skill__list-item2">React JS</li>
-                    <li class="skill__list-item2">Node.JS</li>
-                    <li class="skill__list-item2">Typescript</li>
-                    <li class="skill__list-item2">Gatsby</li>
-                    <li class="skill__list-item2">Websockets</li>
-                    <li class="skill__list-item2">Webpack</li>
+                    <li class="skill__item">React JS</li>
+                    <li class="skill__item">Node.JS</li>
+                    <li class="skill__item">GrafQL</li>
+                    <li class="skill__item">Web Components</li>
+                    <li class="skill__item">Typescript</li>
+                    <li class="skill__item">Gatsby</li>
+                    <li class="skill__item">Websockets</li>
+                    <li class="skill__item">Webpack</li>
 
                 </ul>
             </section>
         </section>
 
         <section class="projects" id="projects">
-            <h2 class="projects__tittle">Recent projects</h2>
-            <p class="projects__paragraph">I started my frontend developer path in 2020. Since then, I’ve built some projects. Here’s the list of the things I’ve done so far.</p>
-            <ul class="projects__list projects__list-js">
-                <!-- Tutaj pojawi sie odpowiedz z API   -->
-            </ul>
+            <h2 class="projects__title">Recent projects</h2>
+            <div class="container">
+                <p class="projects__description">I started my frontend developer path in 2020. Since then, I’ve built some projects. Here’s the list of the things I’ve done so far.</p>
+                <ul class="projects__list projects__list-js">
+
+                </ul>
+            </div>
+
         </section>
 
     </main>
 
     <footer class="contact" id="contact">
-        <div class="contact__underline"></div>
-        <h2 class="contact__tittle">Contact me</h2>
-        <p class="contact__paragraph">I’m open for new opportunities. If you have one for me we should talk! </p>
-        <div class="contact__icone">
-            <a class="contact__icone-link contact__icone-facebook" href="#"><img src="../assets/img/facebook.svg"> </a>
-            <a class="contact__icone-link contact__icone-githube" href="https://github.com/skalutki"><img src="../assets/img/Github.svg"></a>
-            <a class="contact__icone-link contact__icone-instagram" href="#"><img src="../assets/img/instagram.svg"></a>
+        <h2 class="contact__title">Contact me</h2>
+        <div class="container">
+            <p class="contact__description">I’m open for new opportunities. If you have one for me we should talk! </p>
+            <ul class="social">
+
+                <li class="social__item">
+                    <a class="social__link social__link-facebook" href="https://facebook.com/karol.skalutki?ref=bookmarks" target="_blank" rel="nofollor noreferrer">
+                        <img class="social__icon" src="assets/img/facebook.svg" alt="facebook"> </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link-githube" href="https://github.com/skalutki" target="_blank" rel="nofollor noreferrer">
+                        <img class="social__icon" src="assets/img/Github.svg" alt="GitHub"> </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link-linkendin" href="https://linkedin.com/in/karol-skalinski-057591b1/" target="_blank" rel="nofollor noreferrer">
+                        <img class="social__icon" src="assets/img/linkedin-logo-png.png" alt="facebook" alt="linkendin" width="25px" height="25px"> </a>
+                </li>
+            </ul>
+            <a class="contact__mail" href="mailto:karolskalinski@gmail.com">karolskalinski@gmail.com</a>
         </div>
-        <section class="mail">
-            <span class="mail__adress">karolskalinski@gmail.com</span>
-            <div class="mail__underline"></div>
-        </section>
     </footer>
 
 

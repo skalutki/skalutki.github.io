@@ -1,0 +1,57 @@
+    .header {
+        max-width: 1216px;
+        padding: calc(8rem - 16px) 1rem 11.5rem;
+        margin: 0 auto;
+        @media (max-width: $mobile) {
+            padding: 64px 16px 120px;
+        }
+        &__description {
+            color: $gray;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 1.25rem;
+            line-height: 2.25rem;
+            margin-bottom: 3.75rem;
+            max-width: 680px;
+        }
+        &__mail {
+            color: $blue;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.25rem;
+            line-height: 2rem;
+            text-decoration: none;
+            padding-bottom: 8px;
+            border-bottom: solid 2px $blue;
+        }
+        &__photo {
+            width: 120px;
+            height: 120px;
+            border: 4px solid #CBD2D9;
+            border-radius: 50%;
+            padding: 4px;
+            @media (max-width: $mobile) {
+                width: 80px;
+                height: 80px;
+            }
+        }
+        &__title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 2.5rem;
+            line-height: 3.5rem;
+            margin: 2rem 0 1rem;
+            max-width: 780px;
+            @media (max-width: $mobile) {
+                margin: 16px 0 8px;
+            }
+        }
+    }
+    
+    .id {
+        color: $blue;
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 2rem;
+        margin-bottom: 2.5rem;
+    }
