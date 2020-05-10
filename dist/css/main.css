@@ -428,6 +428,9 @@ template {
     font-size: 1.25rem;
     line-height: 2.25rem;
     max-width: 580px; }
+    @media (max-width: 767px) {
+      .projects__description {
+        text-align: center; } }
   .projects__title {
     margin: 0 auto 1rem;
     font-style: normal;
@@ -436,6 +439,9 @@ template {
     line-height: 3rem;
     padding: 1rem 16px;
     max-width: 1216px; }
+    @media (max-width: 767px) {
+      .projects__title {
+        text-align: center; } }
 
 .projects__list {
   list-style-type: none;
