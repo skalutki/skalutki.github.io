@@ -1,8 +1,8 @@
-# Karol Skalinski webside
+![Karol Skalinski Personal Website](src/assets/img/cover.png)
 
 My personal webside built during WTF - Co Ten Frontend course. [https://cotenfrontend.pl/](https://cotenfrontend.pl/)
 
-[Demo](https://skalutki.github.io/)
+[Demo](https://skalutki.github.io/) 🔥
 
 
 ## **Tool & technologies I've used:
@@ -10,8 +10,7 @@ My personal webside built during WTF - Co Ten Frontend course. [https://cotenfro
 - Visual Studio Codee
 - SASS
 - BEM
-- JS
--Fetch API
+- Fetch API
 - CSS Grid
 
 
