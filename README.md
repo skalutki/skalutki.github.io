@@ -1,11 +1,12 @@
 ![Karol Skalinski Personal Website](src/assets/img/cover.png)
 
-My personal webside built during WTF - Co Ten Frontend course. [https://cotenfrontend.pl/](https://cotenfrontend.pl/)
-
-[Demo](https://skalutki.github.io/) 🔥
+My personal webside built during WTF - Co Ten Frontend course. [https://cotenfrontend.pl/](https://cotenfrontend.pl/)🔥🔥
 
 
-## **Tool & technologies I've used:
+# I encourage you to visit my website [Demo](https://skalutki.github.io/) 
+
+
+## Tool & technologies I've used:
 
 - Visual Studio Codee
 - SASS
