@@ -528,7 +528,7 @@ template {
     font-size: 1.25rem;
     line-height: 2.25rem;
     padding-top: 1rem;
-    margin: 1rem 0.5rem; }
+    margin: 1rem 0; }
 
 .skills {
   max-width: 1216px;
