@@ -23,7 +23,7 @@ fetch("https://api.github.com/users/skalutki/repos?sort=updated&direction=dest")
                         </div>
                         <div class="project__footer">
                         ${
-                          homepage ? `<a class="project__link project__link--demo" href=""${homepage}" target="_blank" rel="nofollor noreferrer" title="Demo: ${name}">Demo</a>` : '' 
+                          homepage ? `<a class="project__link project__link--demo" href="${homepage}" target="_blank" rel="nofollor noreferrer" title="Demo: ${name}">Demo</a>` : '' 
                         }
                             
                             <a class="project__link project__link--code" href="${html_url}" target="_blank" rel="nofollor noreferrer" title="Source code: ${name}"> GitHub</a>

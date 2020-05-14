@@ -430,7 +430,8 @@ template {
     max-width: 580px; }
     @media (max-width: 767px) {
       .projects__description {
-        text-align: center; } }
+        text-align: center;
+        max-width: 767px; } }
   .projects__title {
     margin: 0 auto 1rem;
     font-style: normal;

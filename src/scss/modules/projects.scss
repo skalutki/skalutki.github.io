@@ -12,6 +12,7 @@
         max-width: 580px;
         @media (max-width: $mobile) {
             text-align: center;
+            max-width: $mobile;
         }
     }
     &__title {
